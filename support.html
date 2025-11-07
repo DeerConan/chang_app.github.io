@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创搭子 - 技术支持</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #0080FF 0%, #00B4FF 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section h2 {
+            color: #0080FF;
+            font-size: 24px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .section p {
+            margin-bottom: 10px;
+            color: #666;
+        }
+        
+        .info-box {
+            background: #f8f9fa;
+            border-left: 4px solid #0080FF;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .info-box strong {
+            color: #0080FF;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #0080FF;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        
+        .contact-item {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            color: #999;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 28px;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .section h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 创搭子</h1>
+            <p>活动预约应用 - 技术支持</p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2>📱 关于创搭子</h2>
+                <p>创搭子是一款基于 Flutter 开发的现代化活动预约应用，致力于为用户提供便捷的活动发现、报名和管理体验。</p>
+                
+                <div class="info-box">
+                    <strong>版本信息</strong>
+                    版本号：1.0.0<br>
+                    构建号：1<br>
+                    平台支持：iOS / Android
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>✨ 核心功能</h2>
+                <ul class="feature-list">
+                    <li>活动浏览与搜索 - 快速找到感兴趣的活动</li>
+                    <li>在线报名 - 一键报名，简单便捷</li>
+                    <li>二维码签到 - 扫码签到，高效管理</li>
+                    <li>个人中心 - 管理个人信息和已报名活动</li>
+                    <li>消息通知 - 及时接收活动动态</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>🛠️ 技术栈</h2>
+                <div class="info-box">
+                    <strong>开发框架</strong>
+                    Flutter 3.27.1 / Dart 3.0+
+                </div>
+                <div class="info-box">
+                    <strong>核心依赖</strong>
+                    Dio (网络请求) / SharedPreferences (本地存储) / Mobile Scanner (二维码扫描) / Image Picker (图片选择)
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>❓ 常见问题</h2>
+                <div class="info-box">
+                    <strong>Q: 如何报名活动？</strong>
+                    A: 在活动列表中选择感兴趣的活动，点击进入详情页，然后点击"立即报名"按钮即可。
+                </div>
+                <div class="info-box">
+                    <strong>Q: 如何进行活动签到？</strong>
+                    A: 进入"我的活动"页面，选择已报名的活动，点击"签到"按钮，扫描活动现场的二维码即可完成签到。
+                </div>
+                <div class="info-box">
+                    <strong>Q: 忘记密码怎么办？</strong>
+                    A: 在登录页面点击"忘记密码"，通过手机验证码即可重置密码。
+                </div>
+            </div>
+            
+            <div class="contact-info">
+                <h3>📞 联系我们</h3>
+                <div class="contact-item">
+                    <strong>技术支持邮箱：</strong> conan20040504@gmail.com
+                </div>
+                <div class="contact-item">
+                    <strong>项目地址：</strong> https://github.com/ZengLiangYi/Chuang-App
+                </div>
+                <div class="contact-item">
+                    <strong>工作时间：</strong> 周一至周五 9:00 - 18:00
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 创搭子 ChuangDaZi. All rights reserved.</p>
+            <p>Powered by Flutter 3.27.1</p>
+        </div>
+    </div>
+</body>
+</html>
+
